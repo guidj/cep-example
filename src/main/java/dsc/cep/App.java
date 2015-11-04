@@ -10,6 +10,7 @@ import com.espertech.esper.client.EPStatement;
 import dsc.cep.events.TemperatureSensorEvent;
 import dsc.cep.listeners.AverageTemperatureListener;
 import dsc.cep.listeners.HighTemperatureListener;
+import dsc.cep.subscribers.AverageSubscriber;
 
 
 public class App 

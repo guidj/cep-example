@@ -1,4 +1,4 @@
-package dsc.cep;
+package dsc.cep.subscribers;
 
 import java.util.Map;
 
