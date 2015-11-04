@@ -8,14 +8,16 @@ import com.espertech.esper.client.UpdateListener;
 public class HighTemperatureListener implements UpdateListener {
 
 	public void update(EventBean[] newData, EventBean[] oldData) {
-		
-		System.out.println(this.getClass().getName() + " called at " + new Date());
-		
+
+		System.out.println(this.getClass().getName() + " called at "
+				+ new Date());
+
 		if (newData != null) {
 			for (int i = 0; i < newData.length; i++) {
-				System.out.println("\tTemperature above threshold: " + newData[i].getUnderlying());
+				System.out.println("\tTemperature above threshold: "
+						+ newData[i].getUnderlying());
 			}
-		}	
+		}
 	}
 
 }
